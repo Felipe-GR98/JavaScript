@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <title>Math.Tech - Calculadora</title>
+</head>
+<body>
+    <main>
+        <header id='cabecario'>
+            <div>   
+                <h1>Math<span>.Tech</span></h1>
+            </div> 
+        </header>
+        <nav id='menu'>
+            <a href='index.html'>Home</a>
+            <a href='conversoes.html'>Conversões</a>
+            <a href='calculadora.html'>Calculadora</a>
+        </nav>
+        <section id='dark'>
+            <h2>Math<span>.Tech</span></h2>
+            <h3>Calculadora</h3>
+        </section>
+        <section id='flex'>
+            <div class="grid">
+                <input type="text" placeholder='result' readonly id='resultado'>
+                <button class='soma' onclick='calcular(this)'>+</button>
+                <button class='soma' onclick='calcular(this)'>-</button>
+                <button class='soma' onclick='calcular(this)'>*</button>
+                <button class='soma' onclick='calcular(this)'>/</button>
+                <button class='soma' onclick='calcular(this)'>%</button>
+                <button class='soma' onclick='calcular(this)'>a²</button>
+                <button class='soma' onclick='calcular(this)'>b²</button>
+                <button class='soma' onclick='calcular(this)'>ab</button>
+                <input type="number" placeholder="valA" id='numA'>
+                <input type="number" placeholder="valB" id='numB'>
+            </div>
+    </section>
+    </main>
+    <footer id='rodape'>
+        <h3>Math<span>.Tech</span></h3>
+        <p>Desenvolvido por <a href='https://www.linkedin.com/in/felipe-gon%C3%A7alves-407375208/'>Felipe Gonçalves</a></p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+           <div class="vw-plugin-top-wrapper"></div>
+        </div>
+     </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
+    <script src='script.js'></script>
+</body>
+</html>

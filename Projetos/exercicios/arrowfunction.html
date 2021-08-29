@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //      1) Elabore uma arrow function que receba um número. Se positivo armazene-o em A, se for
+        //         negativo, em B. No final mostrar o resultado.
+
+                // let num = (a) => {
+                //     if(a > 0) document.write(`seu numero ${a} é positivo`)
+                //     else document.write(`seu numero ${a} é negativo`)
+                // }
+                // num(Number(prompt("digite um numero :")))
+
+        //         2) Construa uma arrow function que receba uma variável numérica N e imprimi-la somente se a
+        //         mesma for maior que 100, caso contrário imprimi-la com o valor zero.
+
+                    // let number = (N) => {
+                    //     if(N > 100) document.write(` numero é : ${N}`)
+                    //     else document.write(`0`)
+                    // }
+                    // number(Number(prompt('digite um numero maior que 100')));
+
+
+        //         3) Tendo como dados de entrada a altura e o sexo de uma pessoa, construa uma arrow function que
+        //         calcule seu peso ideal, utilizando as seguintes fórmulas:
+        //         Para homens: (72.7h) - 58
+        //         Para mulheres: (62.1h) - 44.7 (h = altura)
+                        
+                    
+                    
+                   let pesoIdeal = (alt, gen) => {
+                     
+                      if( gen == 'M'){
+                          document.write((72.7 * altu) -58)
+                      }
+                      else if (gen =='F'){
+                          document.write((62.1 * altu) -44.7)
+                      }
+                   };
+                   let genero = prompt('digite M para masculino ou F para feminino');
+                    let altu = Number(prompt('digite sua altura'));
+                   pesoIdeal(altu, genero);
+
+
+        //         4)Utilizando arrow function, Declare uma função utilizando uma declaração 
+        //         ou expressão de função. Essa nossa função deverá possuir dois parâmetros (name, lastName). 
+        //         A nossa função deve mostrar no console a seguinte frase: 
+        //         “Olá name lastName, eu sou uma função!”.
+
+                        //     let nome = (name,lastName) => {
+                        //         return (name + " " + lastName)
+                        //     }
+                        //    let n = prompt("digite seu nome :")
+                        //    let sn = prompt("digite seu sobre nome")
+                        //    document.write(`Olá ${nome(n,sn)}, eu sou uma função!`)
+
+        //         5) Converta em arrow function a função: 
+        //             var oldWay = function(name, nickname) {
+        //             return 'My name is ' + nickname + ', ' + name;
+        //             };
+
+        //             console.log( oldWay('James Bond', 'Bond') );
+        //              My name is Bond, James Bond 
+
+                    //    var oldWay = (name, nickname) => {
+                    //    return 'My name is ' + nickname + ', ' + name;
+                    //  };
+
+                    // let nome = prompt("digite sue nome")
+                    // let nick = prompt("digite seu nick")
+                    // document.write( oldWay(nome, nick) );
+                   
+    </script>
+</body>
+</html>

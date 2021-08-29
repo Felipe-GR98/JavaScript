@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from>
+        <!-- <input type="text" id='nome' placeholder="Digite um nome" required>
+        <input type="email" id='email' placeholder="Digite um email" required>
+        <input type="number" id='nu1' placeholder="Digite um numero" required>
+        <input type="number" id='nu2' placeholder="Digite um numero" required>
+        <button onclick="receberDados()">passa</button>
+        <p id='revela'></p> -->
+
+        <p>caixaBaixa</p>
+        <input type="text" id="nome" onblur="caixaAlta(this)" placeholder="Digite o nome" />
+        <p>caixaAlta</p>
+        <input type="email" id="email" onblur="caixaBaixa(this)"  placeholder="Digite o email" required />
+        <input type="password" id="senha" onblur="tamanhoSenha()" placeholder="Digite o senha" required />
+        <br>
+        <span id="tamanho"></span>
+
+        <br>
+
+        <button onclick = "login()">Login</button>
+        <p id="logou"></p>
+
+
+    </from>
+
+    <script>
+        // let receberDados = () => {
+        //     n = document.getElementById('nome').value
+        //     r = document.getElementById('email').value
+        //     num1 = Number(document.getElementById('nu1').value)
+        //     num2 = Number(document.getElementById('nu2').value)
+
+        //     document.getElementById("revela").innerHTML =`
+        //     nome: ${n}, email: ${r}, a sua soma é: ${num1 + num2}`
+        // }
+
+        caixaAlta = (e) => {
+                caixa = document.getElementById(e.id);
+                caixa.value = caixa.value.toUpperCase();
+            }
+
+            caixaBaixa = (e) => {
+                caixa = document.getElementById(e.id);
+                caixa.value = caixa.value.toLowerCase();
+            }
+
+            tamanhoSenha = () => {
+                senha = document.getElementById("senha").value;
+                if(senha.length < 6){
+                    document.getElementById('tamanho').innerHTML = `senha deve ter no minimo 6 caracteres`;
+                }
+            }
+
+            login = () =>{
+                l = document.getElementById("email").value;
+                s = document.getElementById("senha").value
+                if(l != "e@e.com" && s != '123123'){
+                    document.getElementById('logou').innerHTML = 'email ou senha incorretos'
+                }
+                else{
+                    document.getElementById('logou').innerHTML = ' login efetuado'
+                }
+            }   
+
+            //email = "e@e.com" senha = 123123
+
+    </script>
+</body>
+</html>

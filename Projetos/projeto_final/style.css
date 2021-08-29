@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+span{
+    color:blue;
+}
+
+#cabecario{
+    background-color: #ADF4FB;
+    width : 100%;
+    height: 50%;
+    display :flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: background 0.5s linear,color 0.5s linear;
+    
+}
+
+#cabecario h1, #cabecario span{
+    font-size:60px;
+}
+
+ 
+
+#menu{
+    display: flex;
+    align-self: flex-start;
+    background-color: #12e2f5;
+    transition: background 0.5s linear,color 0.5s linear;
+}
+
+#menu a{
+    margin: 0px 0px 0px 8px;
+    border-radius:5px;
+    color:rgb(41, 111, 190);
+    text-decoration:none;
+}
+
+#dark{
+    height:300px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s linear,color 0.5s linear;
+}
+
+#dark input{
+    box-shadow: 3px 3px;
+    cursor: pointer;
+}
+
+#dark h2, #dark span{
+    font-size:45px;
+}
+
+#conversoes{
+    height: 350px;
+    display : flex;
+    justify-content: center;
+    background-color: #75B1F5;
+    align-items: center;
+    transition: background 0.5s linear,color 0.5s linear;
+}
+
+#calculadora{
+    height: 350px;
+    display : flex;
+    justify-content: center;
+    background-color: #0AC6FA;
+    align-items: center;
+    transition: background 0.5s linear,color 0.5s linear;
+}
+
+#conversoes img{
+    display: flex;
+    justify-content:space-around;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    align-items: flex-start;
+    margin: 0px 150px 0px 0px;
+}
+#calculadora img{
+    display: flex;
+    justify-content:space-around;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    align-items: flex-start;
+    margin: 0px 0px 0px 150px;
+}
+
+#text{
+    font-size: 25px;
+}
+
+#converoes #text p{
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+#converoes #text h2{
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+footer{
+    text-align:center;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(11, 89, 179);
+}
+/* inicio da conversoes */
+
+fieldset{
+    padding:20px;
+}
+
+input{
+    padding: 0px 5px;
+    margin: 5px;
+}
+
+.from{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    align-items:center;
+    margin : 0px 0px 15px 0px;
+}
+
+.dados{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.resultado{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* começo da calc*/
+
+#flex{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    width:30%;
+    border:2px solid ;
+}
+
+.grid input:nth-child(1){
+    grid-area: 1/1/2/5;
+}
+.grid input:nth-child(10){
+    grid-area: 5/1/6/3;
+}
+.grid input:nth-child(11){
+    grid-area: 5/3/6/5;
+}

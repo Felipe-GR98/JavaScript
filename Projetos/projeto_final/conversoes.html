@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <title>Math.Tech - Conversões</title>
+</head>
+<body>
+    <main>
+        <header id='cabecario'>
+            <div>   
+                <h1>Math<span>.Tech</span></h1>
+            </div> 
+        </header>
+        <nav id='menu'>
+            <a href='index.html'>Home</a>
+            <a href='conversoes.html'>Conversões</a>
+            <a href='calculadora.html'>Calculadora</a>
+        </nav>
+        <section id='dark'>
+            <h2>Math<span>.Tech</span></h2>
+            <h3>Conversões</h3>
+        </section>
+        <section class="from">
+            <fieldset><legend>Real para:</legend>
+                <from action="" method="GET">
+                    <div class='dados'>
+                        <label>R$ :</label>
+                        <input type='number' id='real' placeholder='Valor a converter.' >
+                        <select id = 'moedas'>
+                            <option></option>
+                            <option value='dolar'>Dólar (EUA)</option>
+                            <option value='euro'>Euro (EUR)</option>
+                        </select>
+                        <input type='button' value='Converter' size='22' onclick='convert()'>
+                    </div>
+                    <div class='resultado'>
+                        <label>Resultado : </label>
+                        <input type='text' id='result' size='45' readonly>
+                    </div>
+                </from>
+            </fieldset>
+        </section>
+        <section class='from'>
+            <fieldset><legend>Celcius para</legend>
+                <from action="" method="GET">
+                    <div class='dados'>
+                        <label>C° :</label>
+                        <input type='number' id='graus' placeholder='Valor a converter.'>
+                        <select id='grau'>
+                            <option></option>
+                            <option value ='fahrenheit'>Fahrenheit</option>
+                            <option value ='kelvin'>Kelvin</option>
+                            
+                        </select>
+                        <input type='button' value='Converter' size='22' onclick='convertg()'>
+                    </div>
+                    <div class='resultado'>
+                        <label>Resultado: </label>
+                        <input type='text' id='result2' size='45' readonly>
+                    </div>
+                </from>
+            </fieldset>
+        </section>
+    </main>
+    <footer id='rodape'>
+        <h3>Math<span>.Tech</span></h3>
+        <p>Desenvolvido por <a href='https://www.linkedin.com/in/felipe-gon%C3%A7alves-407375208/'>Felipe Gonçalves</a></p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+           <div class="vw-plugin-top-wrapper"></div>
+        </div>
+     </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
+    <script src='script.js'></script>
+</body>
+</html>

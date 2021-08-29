@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.semaforo{
+    width: 200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    background-color: gray;
+}
+
+div{
+    width: 150px;
+    height:150px;
+    margin: 10px;
+    background-color:#3E3E3E;
+    border-radius:200px;
+}
+
+button{
+    background-color: black;
+    padding: 30px;
+    border: 0px;
+    color: azure;
+    border-radius: 40px;
+    margin:10px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" placeholder="nome" id="nome" required>
+        <input type="email" placeholder="email" id="email" required>
+        <input type="password" placeholder="senha" id="senha" required>
+        <button type="button" onclick="from()">Enviar</button>
+    </form>
+
+    <script>
+        /*
+        crie um compra,  onde tenha as seguintes propriedades (id, dataCompra, valorTotal, item (idProduto, nomeProduto, quantidade, subtotal))
+        Mostrem os de  dataCompra, valorTotal, nomeProduto e quantidade
+       */
+//  let comprar = {
+//      id: '1561651',
+//      dataCompra:'17/12/1998',
+//      valorTotal: '40,00',
+//      item: {
+//         idProduto: '651651351',
+//         nomeProduto: 'num sei oque',
+//         quantidade: '10',
+//         subtoral: '15,00'
+//      }
+//  }
+
+//     document.write(` data da  compra: ${comprar.dataCompra} <br> Valor Total : ${comprar.valorTotal} <br> nome do produto ${comprar.item.nomeProduto} quantidade : ${comprar.item.quantidade}`)
+
+// compra = {
+//            id: 1, 
+//            dataCompra: "12/05/2021",
+//            valorTotal: 500, 
+//            item: {
+//                idProduto:35, 
+//                nomeProduto:"Pão ciciliano com massa grega e recheio de queijo dinamarques",
+//                quantidade: 2,
+//                subtotal: 500
+//            }
+//        };
+
+//        //extraindo dataCompra de dentro do meu objeto
+//        let {dataCompra} = compra;
+//        let {item} = compra;
+
+//        let {quantidade} = compra.item;
+
+//        let novoItem = compra.item;
+
+//        console.log(novoItem);
+       
+//        console.log(compra);
+//        console.log(dataCompra);
+//        console.log(item);
+      
+
+//        document.write(
+//            `<br>Comprado em: ${compra.dataCompra} no valor de R$ ${compra.valorTotal}<br>
+//             Produto: ${compra.item.quantidade}x ${compra.item.nomeProduto} `
+//        );
+
+    // const calculo = {
+    //     a: 10,
+    //     b: 30,
+    //     soma: () => {
+    //         return calculo.a + calculo.b
+    //     },
+    //     subtracao: () => {
+    //         return calculo.a - calculo.b
+    //     },
+    //     divisao: () => {
+    //         return calculo.a / calculo.b
+    //     },
+    //     multiplicacao: () => {
+    //         return calculo.a * calculo.b
+    //     }
+    // } 
+
+    // document.write(`sua soma é: ${calculo.soma()}, sua subtração é: ${calculo.subtracao()} sua divisão é: ${calculo.divisao()} sua multiplicação é; ${calculo.multiplicacao()}`)
+
+        const from = () => {
+            
+                nome = document.getElementById('nome').value;
+                email = document.getElementById('email').value;
+                senha = document.getElementById('senha').value;
+
+                let dados = {
+                nome : nome,
+                email : email,
+                senha : senha
+                }
+                console.log(dados)
+            }
+            
+        
+    
+</script>
+</body>
+</html>

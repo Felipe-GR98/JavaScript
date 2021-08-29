@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="laq"></h1>
+    <button onclick="texto()">aperta ai krai</button>
+
+    <div id="mouse"></div>
+
+
+    
+        <h1>+ Interação!!</h1>
+        <p>Vamos conhecer os números pares?</p>
+        <button onclick="numerosPares()">Clique aqui!</button>
+        <p id="pares"></p>
+    
+        <script>
+            numerosPares = () =>{
+                var num = parseInt(prompt("Quantos números pares você quer ver?"));
+                while(num < 0 || num > 21){
+                    num = parseInt(prompt("Digite um número maior que 0 e menor que 20:"));
+                };
+    
+                var listaPares = [];
+                for(var i = 0; i < num; i++){
+                    listaPares[i] = " " + (i*2+2);
+                };
+                document.getElementById("pares").innerHTML = ("Aqui está sua sequência de números pares com " + num + " números: " + listaPares + ".");
+            };
+        </script>
+      
+    
+
+    <script src="sceipt_evento_mouse.js"></script>
+</body>
+</html>

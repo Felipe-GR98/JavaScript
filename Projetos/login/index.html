@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // let login = prompt('Qual seu login ?');
+        // let senha = prompt('senha :');
+
+        // if(login == 'adm1' && senha == 'adm123'){
+        //     document.write('login efetuado')
+        // }
+        // else{
+        //     document.write('verifique seu email ou senha.')
+        // }
+
+        // let num =prompt('digite um numero');
+
+        // num = parseInt(num);
+
+        // if(num%2 ==0){
+        //     document.write('este numero é par')
+        // }
+        // else{
+        //     document.write('este numero é impar')
+        // };
+
+
+        // let n1 = prompt('digite sua nota');
+        // let n2 = prompt('digite sua nota');
+        // let n3 = prompt('digite sua nota');
+        // n1 = parseFloat(n1);
+        // n2 = parseFloat(n2);
+        // n3 = parseFloat(n3);
+        // let media = n1 +n2 + n3;
+        // let mediaTotal = media / 3;
+        // if(mediaTotal >= 6){
+        //     document.write("aprovado")
+        // }
+        // else{
+        //     document.write("reprovado")
+        // };
+
+        
+        let n1  = prompt("DIGITE UM NUMERO :")
+        let n2  = prompt("DIGITE UM NUMERO :")
+        let n3  = prompt("DIGITE UM NUMERO :")
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+        n3 = parseInt(n3);
+
+        if(n1 > n2 && n1 > n3 ){
+            maior = n1
+           
+        }
+        else if(n2 > n1){
+           maior = n2
+            
+        }
+        else  {
+            maior =n3
+           
+        }
+            document.write('meu maior numero é :' + maior + '<br>')
+            
+            if(n1 < n2 && n1 < n3){
+                menor  = n1
+            }
+            else if(n2 < n1 && n2 < n3){
+               menor = n2
+            }
+            else {
+                menor = n3
+            }
+            document.write('meu menornumero é :' + menor)
+    </script>
+</body>
+</html>

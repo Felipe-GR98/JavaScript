@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>Jquery - Trabalhando com Seletores</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./libs/jquery-1.5.0.js"></script>
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    button{
+        background-color: tomato;
+        height: 30px;
+        margin: 10px;
+        width: 150px;
+    }   
+    #container{
+        align-items: center;
+        border: 2px solid rgb(152, 161, 152);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 100px;
+        padding: 30px;
+        width: 480px;
+    }         
+    #um, #dois, #tres, #quatro, #cinco{
+        border: 1px solid;
+        height: 100px;
+        margin: 20px;
+        text-align: center;
+        width: 100px;
+    }
+    #button{
+        bottom: 500px;
+        float: right;
+        position: absolute;
+        right: 300px;
+    }        
+</style>
+
+
+  <body>
+    <div id="container">
+
+      <div id="div1">um</div>
+      <div id="div2">dois</div>
+      <div id="div3">tres</div>
+      <div id="div4">quatro</div>
+      <div id="div5">cinco</div>
+  
+    </div>
+    <div id="button">
+      <button>Diferentes</button>
+      <button>Iguais</button>
+      <button>Desaparece</button>
+    </div>
+  
+
+  <script src="./js/js.js"></script>
+
+
+  <!--
+<script src="js/sandbox.js"></script>
+<script src="js/hoverClass.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/blog.js"></script>
+<script src="js/specials.js"></script>
+<script src="js/slideshow.js"></script>
+<script src="js/ions/inputHint.js"></script>
+<script src="js/tabs.js"></script>
+-->
+</body>
+
+</html>

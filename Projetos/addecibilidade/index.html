@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        body {
+            font-size: 10px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Acessibilidade na Web </h1>
+    <p>
+        Quando um site não está acessível, milhões de usuários são impedidos de consumir informação, de realizar compras
+        e, até mesmo, de se comunicar com outras pessoas. Ou seja, é sinônimo de fechar portas em uma sociedade que se
+        orgulha em dizer que é globalizada e digitalmente conectada.
+
+        Além de deixar de ganhar dinheiro, já que pessoas com deficiência também são consumidores ativos, a empresa
+        demonstra falta de empatia e de humanidade para com outros usuários.
+
+        Vale lembrar, ainda, que um site acessível é mais bem ranqueado pelos algoritmos do Google, já que o buscador é
+        capaz de reconhecer esse tipo de prática, o que o torna mais relevante nas pesquisas.
+
+        Tendo esse contexto em evidência, em 2016, foi imposta aTendo esse contexto em evidência, em 2016, foi imposta a Lei Brasileira de Inclusão, exigindo que todas as
+        páginas da web estejam acessíveis, sejam elas privadas, sejam elas públicas.
+
+        Resumindo, acessibilidade na web não é apenas uma forma de cumprir com exigências legais, mas também é uma
+        maneira de garantir um diferencial competitivo para a sua empresa.
+    </p>
+    <p>
+        <a href="https://blog.revendakwg.com.br/inspiracao-design/acessibilidade-na-web/">Clique aquipara saber mais
+        </a>
+    </p>
+    <button onclick="diminuir()"> diminue</button>
+    <button onclick="aumentar()">aumenta </button>
+
+
+    <script>
+         tamanho = 10;
+        function diminuir() {
+            tamanho --;
+            document.body.style.fontSize = tamanho +"px";
+        }
+        function aumentar() {
+            tamanho ++;
+            document.body.style.fontSize = tamanho +"px";
+        }
+
+    </script>
+</body>
+</html>

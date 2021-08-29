@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Gato{
+            constructor(){
+                this.nome = '';
+                this.corPelo = '';
+                this.corOlhos = '';
+                this.idade = '';
+                this.raca = '';
+            }
+            
+            /**
+             * SET E GET
+             * SET -> De atribuição, inserir de valores (ATRIBUIÇÃO)
+             * GET -> De recolher, pegar de valores (RETORNO)
+            */
+            // atribuir valor para nome
+            setNome(nome_){
+                this.nome = nome_;
+            }
+            // receber o valor armazenado de nome
+            getNome(){
+                return this.nome;
+            }
+    
+            //construa os sets e gets das props corOlhos, corPelos, idade, raca
+    
+    
+    
+    
+            //método
+            comer(){
+               return `${this.nome} está comendo`;
+            }
+    
+            miar(){
+                return `${this.nome} disse: Miaaauuu`;
+            }
+    
+            andar(){
+                return `${this.nome} está andando`;
+            }
+    
+            dormir(){
+                return `${this.nome}: ZZZZzzzZzZzZz`;
+            }
+            //Crie dois métodos: rorronar() debochar()
+            rorronar(){
+                return `${this.nome} está fazendo rrrrrrrrrrr`;
+            }
+    
+            debochar(){
+                return `${this.nome} diz: como os humanos são feios kkkkkk miau`
+            }
+              // fim metodos
+        }
+    
+        gato1 = new Gato();
+        gato1.setNome("Fofuchu");
+    
+        
+    
+    </script>
+</body>
+</html>
